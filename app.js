@@ -51,6 +51,8 @@ passport.deserializeUser(User.deserializeUser());
 
 
 
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("The YelpCamp Server Has Started!");
- });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+    console.log("for local host it runs on http://127.0.0.1:3000/");
+});
