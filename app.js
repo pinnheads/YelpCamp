@@ -54,5 +54,5 @@ passport.deserializeUser(User.deserializeUser());
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Our app is running on port ${ PORT }`);
-    //console.log("for local host it runs on http://127.0.0.1:3000/");
+    console.log("for local host it runs on http://127.0.0.1:3000/");
 });
