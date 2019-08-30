@@ -18,7 +18,8 @@ var commentRoutes       = require("./routes/comments"),
 //seedDB(); //seed the database
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp"
+mongoose.connect(url, {useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended: true})); //Using body-parser
 app.set("view engine", "ejs"); //set the view for all the reder files to be ejs
 app.use(express.static(__dirname + "/public"));
