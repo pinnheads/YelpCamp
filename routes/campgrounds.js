@@ -9,6 +9,7 @@ var express = require("express");
 var router = express.Router();
 var Campground = require("../models/campground");
 var middleware = require("../middleware");
+
 // INDEX - Campground route
 router.get("/", function(req,res){ 
     //Get all campgrounds from DB
