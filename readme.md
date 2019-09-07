@@ -35,39 +35,39 @@
 * Show db.collection.drop()
 * Add a show route/template
 
-#Refactor Mongoose Code
+# Refactor Mongoose Code
 * Create a models directory
 * Use module.exports
 * Require all of the above
 
-#Comment New/Create
+# Comment New/Create
 * Add the comment new and create routes
 * Add the new comment form
 
-#Style Show Page
+# Style Show Page
 * Add sidebar to show page
 * Display comments nicer
 
-#Finish Styling the show page
+# Finish Styling the show page
 * Add public directory
 * Add custom stylesheet
 
-#Add User Model
+# Add User Model
 * Install all packages needed for authentication
 * Define User model
 
-#Register
+# Register
 * Configure Passport
 * Add register routes
 * Add register template
 
-#Logout and Navbar
+# Logout and Navbar
 * Add logout route
 * Prevent user from adding a comment if not signed in
 * Add links to navbar
 * Show/hide auth links correctly
 
-#Users + Comments
+# Users + Comments
 * Associate users and comments
 * Save author's name to a comment automatically
 
@@ -75,28 +75,28 @@
 * Prevent an unauthenticated user from creating a campground
 * Save username + id to newly created campground
 
-#Editing Campgrounds
+# Editing Campgrounds
 * Add Method-override
 * Add Edit Route for cmapgrounds
 * Add Link to edit Page
 * Add Update Route
 * Fix $set problem
 
-#Deleting Campgrounds
+# Deleting Campgrounds
 * Add destroy Button
 * Add delete button
 
-#Authorization
+# Authorization
 * User can only edit his/her campgrounds
 * User can only delete his/her campgrounds
 * Hide/show edit and delete buttons
 
-#Editing Comments
+# Editing Comments
 * Add Edit route for comments
 * Add Edit button
 * Add Update route
 
-#Deleting Comments
+# Deleting Comments
 * Add destroy route
 * Add Delete button
 
@@ -106,25 +106,16 @@
 * Hide/Show edit and delete buttons
 * Refactor Middleware
 
-#Adding Flash Message
+# Adding Flash Message
 * Install and configure version
-* ADd bootstrap alerts to the header
+* Add bootstrap alerts to the header
 
-RESTful Routes
+# Basic Routes of Campgrounds
+* INDEX       /campgrounds
+* NEW         /campgrounds/new
+* CREATE      /campgrounds
+* SHOW        /campgrounds/:id
 
-Name        Url         Verb        Desc
-===============================================
-INDEX       /dogs       GET         Display a list of all dogs
-NEW         /dogs/new   GET         Displays form to make a new dog
-CREATE      /dogs       POST        Add new dog to DB
-SHOW        /dogs/:id   GET         Shows info about one dog
-
-#Basic Routes of Campgrounds
-INDEX       /campgrounds
-NEW         /campgrounds/new
-CREATE      /campgrounds
-SHOW        /campgrounds/:id
-
-#Comment Routes
-NEW     campgrounds/:id/comments/new        GET
-CREATE  campgrounds/:id/comments            POST
+# Comment Routes
+* NEW     campgrounds/:id/comments/new        GET
+* CREATE  campgrounds/:id/comments            POST
